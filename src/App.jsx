@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import logo from "./HEALTH-CLOUD-SOLUTIONS.png";
+import SigninForm from "./SignInForm";
 // import Signin from "./Signin";
 import AuthStateApp from "./AuthStateApp";
 
@@ -22,6 +23,9 @@ const Navigation = styled.div`
 `;
 
 const Background = styled.div`
+  display: flex;
+  justify-content: center;
+  align-content: center;
   background-image: url(https://www.trilliumcollege.ca/content/user_files/2020/04/shutterstock_797257417.jpg);
   background-position: center;
   background-size: cover;
@@ -75,9 +79,10 @@ export default function App() {
       </header>
       <Main>
         <Wrapper>
+          {/* <Overlay /> */}
           <Background>
-            {/* <Overlay /> */}
-            <AuthStateApp />
+            <SigninForm />
+            {/* <AuthStateApp /> */}
           </Background>
         </Wrapper>
       </Main>

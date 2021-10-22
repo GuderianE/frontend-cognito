@@ -31,5 +31,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": "https://github.com/GuderianE/frontend-cognito.git",
+  "author": "Elias Guderian",
+  "license": "MIT"
 }
