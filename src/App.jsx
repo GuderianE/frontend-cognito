@@ -1,8 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
 import logo from "./HEALTH-CLOUD-SOLUTIONS.png";
-import SigninForm from "./SignInForm";
-// import Signin from "./Signin";
-import AuthStateApp from "./AuthStateApp";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -60,6 +57,14 @@ const Image = styled.img`
   height: 2.8rem;
 `;
 
+const Title = styled.h1`
+  position: absolute;
+  color: #fff;
+  top: 25rem;
+  z-index: 10;
+  font-size: 64px;
+`;
+
 export default function App() {
   return (
     <>
@@ -69,20 +74,13 @@ export default function App() {
           <div>
             <Image src={logo} alt="Medical logo" />
           </div>
-          <div>
-            <ul>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
         </Navigation>
       </header>
       <Main>
         <Wrapper>
-          {/* <Overlay /> */}
+          <Overlay />
           <Background>
-            <SigninForm />
-            {/* <AuthStateApp /> */}
+            <Title>Willkommen Herr Doktor Mustermann</Title>
           </Background>
         </Wrapper>
       </Main>
